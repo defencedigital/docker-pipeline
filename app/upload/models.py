@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.db import models
 from django.utils.text import slugify
 
@@ -14,11 +14,20 @@ class Project(models.Model):
         ('R', 'Retired'),
     ]
 
+    THEME_CHOICES = [
+        ('EC', 'Ext. collaboration'),
+        ('IC', 'Int. collaboration'),
+        ('UG', 'User guidance'),
+        ('MPP', 'Performance'),
+        ('ES', 'Enabling SECRET'),
+    ]
+
     name = models.CharField(max_length=50)
     description = models.TextField(max_length=250)
     phase = models.CharField(max_length=15, choices=PHASE_CHOICES)
     slug = models.SlugField(unique=True, editable=False)
-    # owner = models.ManyToManyField('Owner')
+    theme = models.CharField(max_length=15, choices=THEME_CHOICES, blank=True)
+    # owner = models.ManyToManyField(User)
 
     def __str__(self):
         return self.name
@@ -29,7 +38,7 @@ class Project(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     role = models.CharField(max_length=30, blank=False)
     location = models.CharField(max_length=30, blank=True)
     telephone = models.CharField(max_length=30, blank=True)

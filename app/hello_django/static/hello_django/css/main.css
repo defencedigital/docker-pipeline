@@ -24,6 +24,36 @@ body > .container, .container-fluid {
   padding-left: 15px;
 }
 
+/* Colors */
+
+.mod-bright-purple {
+    background-color: #AB92E1;
+}
+
+.mod-light-grey {
+    background-color: #C9D0D7;
+}
+
+.mod-bright-blue {
+    background-color: #1FB3E5;
+}
+
+.mod-bright-green {
+    background-color: #2DD573;
+}
+
+.mod-bright-yellow {
+    background-color: #FDC20B;
+}
+
+.mod-bright-orange {
+    background-color: #FF8200;
+}
+
+.mod-bright-pink {
+    background-color: #EC86D0;
+}
+
 /* Project overview */
 
 .kanban-list-column {
@@ -32,6 +62,10 @@ body > .container, .container-fluid {
 
 .kanban-list {
 
+}
+
+.project-badge {
+    margin-left: 1rem;
 }
 
 /* Project detail */

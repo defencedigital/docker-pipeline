@@ -9,7 +9,7 @@
                     <h2 class="text-center p-3 mb-2 text-white" style="background-color: #2D3985;">Backlog</h2>
                     <ul class="list-group">
                     {% for item in backlog %}
-                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a><span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:item.theme }}">{{ item.get_theme_display }}</span></li>
                     {% empty %}
                         <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
                     {% endfor %}
@@ -21,7 +21,7 @@
                     <h2 class="text-center p-3 mb-2 text-white" style="background-color: #863783;">In progress</h2>
                     <ul class="list-group">
                     {% for item in inprogress %}
-                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a><span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:item.theme }}">{{ item.get_theme_display }}</span></li>
                     {% empty %}
                         <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
                     {% endfor %}
@@ -33,7 +33,7 @@
                     <h2 class="text-center p-3 mb-2 text-white" style="background-color: #E16635;">Ready to deploy</h2>
                     <ul class="list-group">
                     {% for item in readytodeploy %}
-                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a><span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:item.theme }}">{{ item.get_theme_display }}</span></li>
                     {% empty %}
                         <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
                     {% endfor %}
@@ -45,7 +45,7 @@
                     <h2 class="text-center p-3 mb-2 text-white" style="background-color: #899755;">Live</h2>
                     <ul class="list-group">
                     {% for item in live %}
-                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a><span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:item.theme }}">{{ item.get_theme_display }}</span></li>
                     {% empty %}
                         <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
                     {% endfor %}
@@ -57,7 +57,7 @@
                     <h2 class="text-center p-3 mb-2 text-white" style="background-color: #C5477F;">Retired</h2>
                     <ul class="list-group">
                     {% for item in retired %}
-                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a><span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:item.theme }}">{{ item.get_theme_display }}</span></li>
                     {% empty %}
                         <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
                     {% endfor %}
