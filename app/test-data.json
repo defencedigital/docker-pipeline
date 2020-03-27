@@ -1,0 +1,211 @@
+[
+  {
+    "model": "upload.project",
+    "pk": 1,
+    "fields": {
+      "name": "Luke Skywalker",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "luke-skywalker",
+      "theme": "EC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 2,
+    "fields": {
+      "name": "C-3PO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "c-3po",
+      "theme": "IC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 3,
+    "fields": {
+      "name": "R2-D2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "r2-d2",
+      "theme": "UG"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 4,
+    "fields": {
+      "name": "Darth Vader",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "darth-vader",
+      "theme": "MPP"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 5,
+    "fields": {
+      "name": "Leia Organa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "leia-organa",
+      "theme": "ES"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 6,
+    "fields": {
+      "name": "Owen Lars",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "B",
+      "slug": "owen-lars",
+      "theme": "EC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 7,
+    "fields": {
+      "name": "Beru Whitesun lars",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "IP",
+      "slug": "beru-whitesun-lars",
+      "theme": "IC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 8,
+    "fields": {
+      "name": "R5-D4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "IP",
+      "slug": "r5-d4",
+      "theme": "UG"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 9,
+    "fields": {
+      "name": "Biggs Darklighter",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "IP",
+      "slug": "biggs-darklighter",
+      "theme": "MPP"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 10,
+    "fields": {
+      "name": "Obi-Wan Kenobi",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "IP",
+      "slug": "obi-wan-kenobi",
+      "theme": "ES"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 11,
+    "fields": {
+      "name": "Anakin Skywalker",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "RD",
+      "slug": "anakin-skywalker",
+      "theme": "EC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 12,
+    "fields": {
+      "name": "Wilhuff Tarkin",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "RD",
+      "slug": "wilhuff-tarkin",
+      "theme": "IC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 13,
+    "fields": {
+      "name": "Chewbacca",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "RD",
+      "slug": "chewbacca",
+      "theme": "UG"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 14,
+    "fields": {
+      "name": "Han Solo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "L",
+      "slug": "han-solo",
+      "theme": "MPP"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 15,
+    "fields": {
+      "name": "Greedo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "L",
+      "slug": "greedo",
+      "theme": "ES"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 16,
+    "fields": {
+      "name": "Jabba Desilijic Tiure",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "L",
+      "slug": "jabba-desilijic-tiure",
+      "theme": "UG"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 17,
+    "fields": {
+      "name": "Wedge Antilles",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "L",
+      "slug": "wedge-antilles",
+      "theme": "EC"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 18,
+    "fields": {
+      "name": "Jek Tono Porkins",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "L",
+      "slug": "jek-tono-porkins",
+      "theme": "UG"
+    }
+  },
+  {
+    "model": "upload.project",
+    "pk": 19,
+    "fields": {
+      "name": "Yoda",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur urna lectus, tempor in varius id, aliquam vitae nisl. Etiam vitae interdum odio, eget imperdiet elit. Integer a eleifend ante. Nullam nulla dui, suscipit ut magna ut, suscipit feugiat",
+      "phase": "R",
+      "slug": "yoda",
+      "theme": "EC"
+    }
+  }
+]
