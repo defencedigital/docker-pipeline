@@ -1,0 +1,69 @@
+{% extends 'hello_django/base.html' %}
+{% load static %}
+{% block title %}- Overview{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg kanban-list-column">
+                <div class="kanban-list" id="backlog-list">
+                    <h2 class="text-center p-3 mb-2 text-white" style="background-color: #2D3985;">Backlog</h2>
+                    <ul class="list-group">
+                    {% for item in backlog %}
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                    {% empty %}
+                        <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg kanban-list-column">
+                <div class="kanban-list" id="in-progress-list">
+                    <h2 class="text-center p-3 mb-2 text-white" style="background-color: #863783;">In progress</h2>
+                    <ul class="list-group">
+                    {% for item in inprogress %}
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                    {% empty %}
+                        <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg kanban-list-column">
+                <div class="kanban-list" id="ready-to-deploy-list">
+                    <h2 class="text-center p-3 mb-2 text-white" style="background-color: #E16635;">Ready to deploy</h2>
+                    <ul class="list-group">
+                    {% for item in readytodeploy %}
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                    {% empty %}
+                        <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg kanban-list-column">
+                <div class="kanban-list" id="live-list">
+                    <h2 class="text-center p-3 mb-2 text-white" style="background-color: #899755;">Live</h2>
+                    <ul class="list-group">
+                    {% for item in live %}
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                    {% empty %}
+                        <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg kanban-list-column">
+                <div class="kanban-list" id="retired-list">
+                    <h2 class="text-center p-3 mb-2 text-white" style="background-color: #C5477F;">Retired</h2>
+                    <ul class="list-group">
+                    {% for item in retired %}
+                        <li class="kanban-list-item list-group-item"><a href="{% url 'upload:project-detail' item.slug %}">{{ item.name }}</a></li>
+                    {% empty %}
+                        <li class="kanban-list-item list-group-item">Nothing in this phase yet...</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

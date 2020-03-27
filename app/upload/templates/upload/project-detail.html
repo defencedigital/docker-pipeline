@@ -1,0 +1,21 @@
+{% extends 'hello_django/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <h2>{{ project.name }}</h2>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <a href="/"><small>Back to overview</small></a>
+                <p>Current phase: <strong>{{ project.get_phase_display }}</strong></p>
+                <p>{{ project.desription }}</p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h3>{{ project.owner }}</h3>
+                <p>Current phase: <strong>{{ project.get_phase_display }}</strong></p>
+                <p>{{ project.desription }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

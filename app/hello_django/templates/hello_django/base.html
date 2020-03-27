@@ -1,0 +1,14 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+{% include 'hello_django/snippets/head.html' %}
+    <body>
+{% include 'hello_django/snippets/navbar.html' %}
+
+{% block content %}{% endblock %}
+
+{% include 'hello_django/snippets/footer.html' %}
+
+{% include 'hello_django/snippets/scripts.html' %}
+    </body>
+</html>

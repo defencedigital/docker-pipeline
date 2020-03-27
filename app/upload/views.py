@@ -1,15 +1,23 @@
-from django.shortcuts import render
-from django.core.files.storage import FileSystemStorage
+from django.views.generic import ListView, DetailView
+from .models import Project
 
 
-def image_upload(request):
-    if request.method == "POST" and request.FILES["image_file"]:
-        image_file = request.FILES["image_file"]
-        fs = FileSystemStorage()
-        filename = fs.save(image_file.name, image_file)
-        image_url = fs.url(filename)
-        print(image_url)
-        return render(request, "upload.html", {
-            "image_url": image_url
-        })
-    return render(request, "upload.html")
+class ProjectListView(ListView):
+    model = Project
+    context_object_name = 'projects'
+    template_name = 'upload/project-overview.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['backlog'] = Project.objects.filter(phase='B')
+        context['inprogress'] = Project.objects.filter(phase='IP')
+        context['readytodeploy'] = Project.objects.filter(phase='RD')
+        context['live'] = Project.objects.filter(phase='L')
+        context['retired'] = Project.objects.filter(phase='R')
+        return context
+
+
+class ProjectDetailView(DetailView):
+    model = Project
+    template_name = 'upload/project-detail.html'
+    context_object_name = 'project'
