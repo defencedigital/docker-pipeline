@@ -18,11 +18,11 @@ class ProjectListView(ListView):
             "ES": "mod-bright-yellow",
         }
         context = super().get_context_data(**kwargs)
-        context['backlog'] = Project.objects.filter(phase='B')
-        context['inprogress'] = Project.objects.filter(phase='IP')
-        context['readytodeploy'] = Project.objects.filter(phase='RD')
-        context['live'] = Project.objects.filter(phase='L')
-        context['retired'] = Project.objects.filter(phase='R')
+        context['backlog'] = Project.objects.filter(phase='B').order_by('priority')
+        context['inprogress'] = Project.objects.filter(phase='IP').order_by('priority')
+        context['readytodeploy'] = Project.objects.filter(phase='RD').order_by('priority')
+        context['live'] = Project.objects.filter(phase='L').order_by('priority')
+        context['retired'] = Project.objects.filter(phase='R').order_by('priority')
         context['theme_colors'] = theme_colors
         return context
 

@@ -15,8 +15,8 @@ class Project(models.Model):
     ]
 
     THEME_CHOICES = [
-        ('EC', 'Ext. collaboration'),
-        ('IC', 'Int. collaboration'),
+        ('EC', 'External collab.'),
+        ('IC', 'Internal collab.'),
         ('UG', 'User guidance'),
         ('MPP', 'Performance'),
         ('ES', 'Enabling SECRET'),
@@ -27,6 +27,7 @@ class Project(models.Model):
     phase = models.CharField(max_length=15, choices=PHASE_CHOICES)
     slug = models.SlugField(unique=True, editable=False)
     theme = models.CharField(max_length=15, choices=THEME_CHOICES, blank=True)
+    priority = models.PositiveIntegerField(default=0)
     # owner = models.ManyToManyField(User)
 
     def __str__(self):
