@@ -27,7 +27,7 @@ class Project(models.Model):
     phase = models.CharField(max_length=15, choices=PHASE_CHOICES)
     slug = models.SlugField(unique=True, editable=False)
     theme = models.CharField(max_length=15, choices=THEME_CHOICES, blank=True)
-    # owner = models.ManyToManyField(User)
+    owner = models.ForeignKey('Profile', on_delete=models.SET_NULL, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -40,5 +40,10 @@ class Project(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     role = models.CharField(max_length=30, blank=False)
+    organisation = models.CharField(max_length=30, blank=True)
     location = models.CharField(max_length=30, blank=True)
     telephone = models.CharField(max_length=30, blank=True)
+    projects = models.ManyToManyField(Project)
+
+    def __str__(self):
+        return str(self.user)

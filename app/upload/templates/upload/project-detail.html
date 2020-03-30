@@ -3,18 +3,22 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-12">
                 <h2>{{ project.name }}</h2>
             </div>
+        </div>
+        <div class="row">
             <div class="col-lg-8 col-md-12">
                 <a href="/"><small>Back to overview</small></a>
                 <p>Current phase: <strong>{{ project.get_phase_display }}</strong></p>
-                <p>{{ project.desription }}</p>
+                <p>Theme of work: <span class="badge badge-primary ml-2 mr-1 {{ theme_colors|get_theme_color:project.theme }}">{{ project.get_theme_display }}</span></p>
+                <p>{{ project.description }}</p>
             </div>
             <div class="col-lg-4 col-md-12">
-                <h3>{{ project.owner }}</h3>
-                <p>Current phase: <strong>{{ project.get_phase_display }}</strong></p>
-                <p>{{ project.desription }}</p>
+                <p>Project owner: <strong>{{ project.owner }}</strong></p>
+                <p>Role: <strong>{{ project.owner.role|default:"Unknown" }}</strong></p>
+                <p>Organisation: <strong>{{ project.owner.organisation|default:"Unknown" }}</strong></p>
+                <p>Email address: <a href="{{ project.owner.email|default:"#" }}">{{ project.owner.email|default:"Unknown"}}</a></p>
             </div>
         </div>
     </div>
