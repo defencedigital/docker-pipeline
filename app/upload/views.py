@@ -33,6 +33,18 @@ class ProjectDetailView(DetailView):
     template_name = 'upload/project-detail.html'
     context_object_name = 'project'
 
+    def get_context_data(self, **kwargs):
+        theme_colors = {
+            "EC": "mod-bright-purple",
+            "IC": "mod-light-grey",
+            "UG": "mod-bright-blue",
+            "MP": "mod-light-green",
+            "ES": "mod-bright-yellow",
+        }
+        context = super().get_context_data(**kwargs)
+        context['theme_colors'] = theme_colors
+        return context
+
 
 @register.filter
 def get_theme_color(dict, key):
